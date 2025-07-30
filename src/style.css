@@ -323,7 +323,6 @@ h2 {
 
 .article_design_01 img:first-of-type {
   position: absolute;
-  left: 5rem;
   bottom: -50rem;
 }
 
@@ -343,9 +342,12 @@ h2 {
 /* ? ---------- Circle-Animation --------- */
 
 .wrapper_circle {
+  max-width: 12.8rem;
   position: absolute;
-  right: -10rem;
-  transform: translate(0, -12rem);
+  right: 0rem;
+  z-index: -1;
+  transform: translate(0, -8rem);
+  overflow: hidden;
 }
 
 .wrapper_circle img {
@@ -368,6 +370,8 @@ h2 {
 footer {
   border-top: 14rem solid #f5f5f5;
   padding-top: 5rem;
+  padding-bottom: 2rem;
+  overflow: hidden;
 }
 
 .section_footer_text {
@@ -392,4 +396,71 @@ footer {
   font-weight: 700;
   line-height: 2.9rem;
   margin-bottom: 2rem;
+}
+
+.section_footer_info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper_socials {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.wrapper_socials img {
+  max-width: 1.5rem;
+}
+
+.section_footer_info a {
+  border: none;
+  padding: 0;
+  margin: 0 0.7rem 1rem 0;
+}
+
+.div_logos {
+  margin-right: 5rem;
+}
+
+.div_logos img {
+  max-width: 7rem;
+  margin-left: 2rem;
+}
+
+/* ? ---------- Banner-Animation --------- */
+
+.banner_date {
+  max-width: 50%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  transform: rotate(40deg);
+}
+
+.banner_date p {
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Lora-VariableFont", "serif";
+  font-weight: 700;
+  font-size: 5.5rem;
+  animation: repeatBanner 4s linear infinite alternate;
+  white-space: nowrap;
+}
+
+.line_letters {
+  color: white;
+  text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
+}
+
+@keyframes repeatBanner {
+  from {
+    transform: translateX(-38%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
