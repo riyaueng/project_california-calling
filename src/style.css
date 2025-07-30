@@ -451,7 +451,7 @@ footer {
   white-space: nowrap;
 }
 
-.line_letters {
+.banner_date .line_letters {
   color: white;
   text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black, -1px -1px 0 black;
 }
